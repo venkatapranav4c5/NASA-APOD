@@ -36,13 +36,7 @@ class NasaNewsListActivity : AppCompatActivity(), NasaNewsItemClickListener {
     }
 
     private fun navigateToApodActivity() {
-        progressBar?.show()
         val intent = Intent(this@NasaNewsListActivity, ApodActivity::class.java)
         startActivity(intent)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        progressBar?.hide()
     }
 }

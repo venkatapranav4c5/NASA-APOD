@@ -23,11 +23,4 @@
         android:paddingRight="4dp"
         tools:listitem="@layout/layout_nasa_news_list_item" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_gravity="center"
-        android:visibility="gone" />
-
 </FrameLayout>

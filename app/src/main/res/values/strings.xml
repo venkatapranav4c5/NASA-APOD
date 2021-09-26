@@ -2,4 +2,6 @@
     <string name="app_name">NASA APOD</string>
     <string name="apod">Astronomy Pic of the Day</string>
     <string name="nasa_logo">NASA Logo</string>
+    <string name="apod_image">APOD Image</string>
+    <string name="empty_apod_text">Sorry!! Currently there are no images to show!!</string>
 </resources>
