@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="nasanewsitem"
+            type="com.pranavkonduru.nasaapod.data.models.NasaNewsItem" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.6"
+                android:scaleX="0.90"
+                android:scaleY="0.90"
+                android:contentDescription="@string/nasa_logo"
+                android:src="@mipmap/nasa_logo"
+                tools:src="@mipmap/nasa_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:text="@{nasanewsitem.title}"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                tools:text="@string/apod" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

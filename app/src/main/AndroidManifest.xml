@@ -12,7 +12,10 @@
         android:theme="@style/Theme.NASAAPOD"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.apod.ApodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.nasanewslist.NasaNewsListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
