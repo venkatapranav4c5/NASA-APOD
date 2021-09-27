@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "apod_item")
 data class APODItem(
-    val copyright: String,
+    val copyright: String?,
     val date: String,
     val explanation: String,
     val hdurl: String,

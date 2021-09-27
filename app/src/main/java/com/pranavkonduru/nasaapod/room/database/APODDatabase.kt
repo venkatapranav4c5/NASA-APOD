@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.pranavkonduru.nasaapod.data.models.APODItem
 import com.pranavkonduru.nasaapod.room.dao.APODDao
 
-@Database(entities = [APODItem::class], version = 1, exportSchema= false)
+@Database(entities = [APODItem::class], version = 2, exportSchema= false)
 abstract class APODDatabase: RoomDatabase() {
     abstract fun aPODDao(): APODDao
     companion object {
